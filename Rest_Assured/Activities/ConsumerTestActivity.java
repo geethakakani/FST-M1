@@ -29,8 +29,8 @@ public class ConsumerTest {
         // Create request and response body
         DslPart reqAndResBody = new PactDslJsonBody()
                 .numberType("id", 780)
-                .stringType("firstName", "Rupam")
-                .stringType("lastName", "Rashmi")
+                .stringType("firstName", "K")
+                .stringType("lastName", "Geetha")
                 .stringType("email", "xyz@gmail.com");
         //Write the interaction
         return builder.given("POST Request").
@@ -52,8 +52,8 @@ public class ConsumerTest {
         //Request body
         Map<String, Object> reqBody = new HashMap<>();
         reqBody.put("id", 780);
-        reqBody.put("firstName", "Rupam");
-        reqBody.put("lastName", "Rashmi");
+        reqBody.put("firstName", "K");
+        reqBody.put("lastName", "Geetha");
         reqBody.put("email", "xyz@gmail.com");
         //Send request, get response and assert
         given().baseUri("http://localhost:8282").headers(headers).body(reqBody).log().all().
