@@ -47,10 +47,10 @@ public class Activity4 {
         // Enter the details
         driver.findElement(AppiumBy.xpath(
                 "//android.widget.EditText[@text='First name']"
-        )).sendKeys("Aaditya");
+        )).sendKeys("Geetha");
         driver.findElement(AppiumBy.xpath(
                 "//android.widget.EditText[@text='Last name']"
-        )).sendKeys("Varmaaa");
+        )).sendKeys("Kakani");
         driver.findElement(AppiumBy.xpath(
                 "//android.widget.EditText[@text='Phone']"
         )).sendKeys("999148292");
@@ -62,7 +62,7 @@ public class Activity4 {
 
         // Assertion
         String contactName = driver.findElement(AppiumBy.id("large_title")).getText();
-        Assert.assertEquals(contactName, "Aaditya Varmaaa");
+        Assert.assertEquals(contactName, "Geetha Kakani");
     }
 
     // Tear down method
